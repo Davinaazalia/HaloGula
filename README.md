@@ -1,13 +1,14 @@
 # HaloGula
-<<<<<<< HEAD
-=======
+
 
 **HaloGula** adalah proyek Machine Learning berbasis website untuk **prediksi risiko penyakit diabetes**.  
 Proyek ini bertujuan membantu masyarakat melakukan deteksi awal risiko diabetes melalui input data kesehatan sederhana, sehingga dapat dilakukan pencegahan lebih dini.
 
 ## 👥 Tim Pengembang
 
-- **Intan** — Data Scientist & Machine Learning Engineer  
+- **[@intan-psf](https://github.com/intan-psf)** — Data Scientist & Machine Learning Engineer  
+  Bertanggung jawab pada pengolahan data, pemodelan, dan evaluasi performa model prediksi diabetes.
+ — Data Scientist & Machine Learning Engineer  
   Bertanggung jawab pada pengolahan data, pemodelan, dan evaluasi performa model prediksi diabetes.
 - **Davina Azalia Tara** — Project Manager & Web Developer  
   Bertanggung jawab pada perbaikanMachine Learning, pengembangan dan integrasi website, serta manajemen keseluruhan proyek.
