@@ -30,4 +30,4 @@ Proyek ini bertujuan membantu masyarakat melakukan deteksi awal risiko diabetes 
 ---
 
 Selengkapnya, silakan kunjungi repo ini untuk melihat detail pengembangan.
->>>>>>> c674a45bf923f6b62028784de7f59c06e08afd5f
+
