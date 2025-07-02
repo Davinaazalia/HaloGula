@@ -1,0 +1,448 @@
+body {
+  
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+  }
+  
+  .hero-section {
+    background-color: #ffe5e5;
+    padding: 80px 0;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    color: #333;
+  }
+  
+  .hero-section p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+  
+  .btn-primary {
+    background-color: #d9534f;
+    border-color: #d9534f;
+  }
+  
+  .btn-primary:hover {
+    background-color: #c9302c;
+  }
+  
+  .navbar-brand img {
+    width: 70px;
+    height: 70px;
+  }
+  
+  footer {
+    font-size: 0.9rem;
+  }
+/* Navbar */
+.navbar {
+    background-color: #B01F24; /* Latar belakang navbar merah gelap */
+    padding: 10px 20px; /* Padding untuk jarak dalam navbar */
+    border-top: 5px solid #ad251b; /* Garis atas dengan warna pink */
+    font-family: 'Poppins', sans-serif; /* Menambahkan font Poppins */
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around; /* Menyebar tautan secara merata */
+    margin: 0;
+    padding: 0;
+  }
+  .navbar-brand .logo {
+    width: 150px; /* Lebar logo */
+    height: auto; /* Tinggi menyesuaikan proporsi */
+    object-fit: contain; /* Menjaga proporsi gambar */
+  }
+  
+  /* Responsif untuk layar kecil */
+  @media (max-width: 768px) {
+    .navbar-brand .logo {
+      width: 100px; /* Logo lebih kecil di perangkat mobile */
+    }
+  }
+  
+  .nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  /* Menambahkan garis bawah menggunakan pseudo-elemen */
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px; /* Sesuaikan ketebalan garis */
+    background-color: hwb(0 20% 39%); /* Warna garis */
+    transform: scaleX(0); /* Garis akan disembunyikan awalnya */
+    transform-origin: bottom right;
+    transition: transform 0.3s ease; /* Efek transisi untuk garis */
+  }
+  
+  /* Efek hover: garis bawah muncul */
+  .nav-link:hover::after {
+    transform: scaleX(1); /* Garis muncul saat hover */
+    transform-origin: bottom left;
+  }
+  
+  .nav-link:hover {
+    color: hwb(0 20% 39%); /* Ganti warna teks saat hover (opsional) */
+  }
+  
+
+ /* Hero Section */
+.hero {
+    display: flex;
+    justify-content: flex-start; /* Pindahkan ke kiri */
+    align-items: center; /* Vertikal center */
+    height: 100vh; /* Tinggi hero section sesuai dengan tinggi viewport */
+    background: linear-gradient(81deg, #F7E6E6 47.42%, rgba(253, 254, 255, 0.47) 89.11%);
+    overflow: hidden;
+    padding: 0 20px;
+  }
+  
+  .hero-text {
+    max-width: 50%; /* Batasi lebar teks */
+    color: white;
+  }
+
+  
+  /* Gaya untuk h1 di dalam .hero secara keseluruhan */
+  .hero h1 {
+    font-size: 48px; /* Ukuran lebih besar untuk h1 yang berada di dalam .hero */
+    margin-bottom: 20px; /* Jarak antara h1 dan elemen berikutnya */
+  }
+  
+  .hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #2C0809; 
+    line-height: 30px; /* Jarak antar baris */
+    margin-bottom: 10px;
+    width: 500px; /* Lebar elemen */
+    margin-top: 30px;
+    margin-left: 50px;
+    
+  }
+  
+  .hero button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #B01F24 0%, #972437 100%);
+    box-shadow: 0px 4px 16.9px 0px rgba(0, 0, 0, 0.25);
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px
+  }
+  
+  .hero button:hover {
+    background-color: darkred;
+    transform: scale(1.1); /* Membesar saat di-hover */
+    transform: scale(1.1); /* Zoom in */
+     box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.4); /* Shadow lebih besar */
+  }
+  
+  /* Hero image */
+  .hero-image {
+    max-width: 50%; /* Batasi lebar gambar */
+    display: flex;
+    justify-content: center; /* Posisikan gambar ke tengah */
+  }
+  
+  .hero-image img {
+    width: 100%; /* Gambar menyesuaikan dengan container */
+    height: auto;
+    object-fit: cover; /* Menjaga proporsi gambar */
+  }
+  
+  .hero-text h1 {
+    color: #2C0809; /* Warna teks */
+    font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins */
+    font-size: 45px; /* Ukuran font */
+    font-weight: 700; /* Ketebalan font lebih tebal */
+    font-style: normal; /* Gaya font normal */
+    line-height: 55px; /* Jarak antar baris */
+    letter-spacing: 1px; /* Spasi antar huruf */
+    width: 600px; /* Lebar elemen */
+    height: 100px; /* Tinggi elemen */
+    flex-shrink: 0; /* Tidak menyusut pada layout flex */
+    display: flex; /* Menggunakan flexbox */
+    align-items: center; /* Vertikal center jika diperlukan */
+    margin-bottom: 55px; 
+    margin-top: 55px;
+    margin-left: 50px;
+  }
+
+ 
+  .button:hover {
+    background-color: darkred;
+    transform: scale(1.1); /* Membesar saat di-hover */
+  }
+
+  .button:active {
+    transform: scale(0.9); /* Mengecil saat diklik */
+  }
+
+
+/* Styling untuk section Tentang HaloGula */
+#about {
+    padding: 5rem 0; /* Padding atas dan bawah */
+    background-color: #f9f9f9; /* Latar belakang section */
+    position: relative; /* Untuk penempatan div baru */
+  }
+  
+  /* Styling untuk kotak yang berisi tulisan "Cek Prediksi" */
+  .prediction-box {
+    display: inline-flex;
+    height: 200px; /* Tinggi kotak */
+    padding: 196px 69px 113px 81px; /* Padding di dalam kotak */
+    flex-direction: column; /* Mengatur teks di dalam kotak */
+    justify-content: flex-end; /* Menyusun teks ke bawah */
+    align-items: center; /* Menyusun teks di tengah */
+    flex-shrink: 0;
+    border-radius: 10px; /* Membulatkan sudut kotak */
+    background: #FFF; /* Latar belakang kotak */
+    box-shadow: 0px 34px 44px 0px rgba(141, 123, 128, 0.22)!important; /* Bayangan di kotak */
+    padding: 10px 20px 40px 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan */
+    transition: all 0.3s ease-in-out !important; /* Animasi halus */
+  }
+  
+
+/* Styling untuk container logo */
+.logo-container {
+    margin-bottom: 3px; /* Memberikan jarak antara logo dan tulisan */
+    display: flex;
+    justify-content: center; /* Menyusun logo di tengah */
+  }
+  
+  /* Styling untuk logo */
+  .logo-img {
+    width: 90px; /* Lebar logo */
+    height: 126px; /* Tinggi logo */
+    flex-shrink: 0; /* Tidak menyusut */
+    object-fit: contain; /* Menjaga rasio logo */
+  }
+  
+  
+  /* Responsif: Mengubah ukuran pada layar kecil */
+  @media (max-width: 768px) {
+    .prediction-box {
+      height: 250px; /* Sesuaikan tinggi kotak pada layar kecil */
+      padding: 8px; /* Sesuaikan padding */
+    }
+  
+    .logo-img {
+      width: 100px; /* Sesuaikan ukuran logo */
+      height: 98px; /* Sesuaikan ukuran logo */
+    }
+  }
+
+  /* Styling untuk tulisan "Cek Prediksi" */
+  .prediction-text {
+    font-size: 13px; /* Ukuran font */
+    font-weight: 600; /* Berat font */
+    color: #84171B; /* Warna teks */
+    text-align: center; /* Menyusun teks di tengah */
+    margin: 0; /* Menghapus margin default */
+  }
+  
+  
+  /* Styling untuk elemen efek di sebelah kiri */
+  .side-effect {
+    .side-effect {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%; /* Lebar efek di sebelah kiri */
+        height: 100%;
+        background-image: url('assets/Ellipse 202784.png'); /* Path relatif */
+        background-size: cover; /* Menyesuaikan gambar dengan ukuran elemen */
+        background-position: center; /* Menempatkan gambar di tengah */
+        border-radius: 595px;
+        backdrop-filter: blur(5.45px); /* Efek blur pada gambar */
+        z-index: -1; /* Memastikan efek berada di belakang konten */
+        pointer-events: none; /* Menghindari interaksi dengan div ini */
+      }
+      
+      }
+  
+  /* Styling untuk judul h2 */
+  #about h2 {
+    color: #84171B;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 67px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+  }
+  
+  /* Styling untuk paragraf di dalam section */
+  #about p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling untuk tombol "Cek Prediksi" */
+  #about .btn {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #84171B;
+    border-color: #84171B;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Efek saat hover pada tombol */
+  #about .btn:hover {
+    background-color: #84171B;
+    color: white;
+  }
+  
+ /* Gaya Umum untuk Container */
+/* Gaya untuk bagian hasil prediksi */
+#hasil-prediksi {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Gaya untuk kotak hasil prediksi */
+.result-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  animation: fadeInBox 1s ease-in-out; /* Animasi kotak hasil prediksi */
+}
+
+/* Nama Pengguna */
+.result-name {
+  color: #841c26;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Teks Hasil Prediksi */
+.prediction-text {
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 10px;
+  opacity: 0; /* Mulai dengan opacity 0 */
+  animation: fadeInText 1.5s ease-in-out forwards; /* Animasi teks hasil prediksi */
+}
+
+/* Animasi untuk kotak hasil prediksi */
+@keyframes fadeInBox {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animasi untuk teks hasil prediksi */
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Gaya untuk tombol Cek Ulang */
+.cek-ulang-btn {
+  background-color: #841c26; /* Warna latar belakang tombol */
+  color: white; /* Warna teks tombol */
+  padding: 10px 15px; /* Jarak di dalam tombol */
+  border: none; /* Menghapus border default */
+  border-radius: 5px; /* Membuat sudut tombol melengkung */
+  cursor: pointer; /* Menambahkan pointer saat hover */
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Transisi untuk perubahan */
+  opacity: 0; /* Mulai dengan opacity 0 */
+  animation: fadeInButton 5s ease-in-out forwards; /* Animasi untuk tombol */
+}
+
+/* Efek hover untuk tombol cek ulang */
+.cek-ulang-btn:hover {
+  background-color: #700c17; /* Mengubah warna latar belakang saat hover */
+  transform: scale(1.1); /* Membesarkan tombol sedikit saat hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan saat hover */
+}
+
+/* Efek tombol saat ditekan (klik) */
+.cek-ulang-btn:active {
+  transform: scale(0.98); /* Efek tombol sedikit mengecil saat ditekan */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Mengurangi bayangan saat ditekan */
+}
+
+/* Animasi untuk tombol cek ulang */
+@keyframes fadeInButton {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Menetapkan font Poppins ke elemen yang diinginkan */
+.result-container h2, 
+.result-name, 
+.prediction-text, 
+.cek-ulang-btn {
+  font-family: 'Poppins', sans-serif;
+}
+
+.result-container h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #841c26;
+}
+
+.result-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #841c26;
+}
+
+.prediction-text {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #333;
+}
