@@ -24,7 +24,7 @@ Proyek ini bertujuan membantu masyarakat melakukan deteksi awal risiko diabetes 
 
 - Python, scikit-learn, TensorFlow (Machine Learning)
 - HTML, CSS, JavaScript (Frontend)
-- Flask/Django (Backend — sesuaikan)
+- Flask/Django (Backend)
 - Git & GitHub (Kolaborasi & Version Control)
 
 ---
